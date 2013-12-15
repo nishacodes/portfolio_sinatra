@@ -1,19 +1,22 @@
-/*.main {height:1500px; width:500px; background-color:#eee; float:left;}
-.nav {height:34px; width:500px; position:fixed; top:0; left:0; background-color:#6699ff; opacity:0;}
+.nav {height:34px; width:100%; position:fixed; top:0; left:0; background-color:#6699ff; opacity:0;}
 .visible {opacity:1;}
-.nav a {display:block; font-size:14px; line-height:14px; float:left; padding:10px;}
-.header {width:500px; height:150px; float:left; background-color:#ddd;}
-.content {width:500px; height:1200px; float:left;}
-
-*/
+.nav a {display:block; font-size:14px; line-height:14px; float:left; padding:10px; z-index: 100;}
+.header {width:100%; height:150px; float:left; background-color:#ddd;}
+.content {width:100%; height:1200px; float:left;}
 
 /**** GENERIC STYLES ****/
 
 body {
   font-size: 12pt;
   line-height: 1.2;
+  /*font: 1em/1.4em 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
 }
+a { 
+  color: inherit; 
+  text-decoration: none;
+} 
 
 .centering {
   width: 0px;
@@ -34,6 +37,10 @@ body {
 
 .white { background-color: white;}
 
+.white-transparent {
+  background-color: rgba(255,255,255, 0.5);
+}
+
 .gray { background-color: #DEDEDE;}
 
 .black { background-color: black;}
@@ -44,34 +51,65 @@ body {
   box-shadow:         0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
+.transparent {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bold:hover {
+  color: #E8D720;
+}
+
 hr {
   width: 250px;
+  border-top: 0;
+  height: 0;
 }
 /**** TEXT STYLES ****/
 
 h1 { /*name*/
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18pt;
-  letter-spacing: 3px;
-  padding-top: 100px
+  font-family: 'Amatic SC', cursive;
+  font-size: 50pt;
+  letter-spacing: 5px;
+  padding-top: 180px;
+  color: white;
+  font-weight: 700;
 }
 
 h2 { /*tagline*/
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Nixie One', cursive;
   font-size: 18pt;
   letter-spacing: 3px;
   font-weight: 100;
+  color: white;
+  line-height: 1;
   /*padding-top: 130px*/
 }
 
 h3, h3 a { /*section headings*/
-  font-size: 36pt;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40pt;
+  font-family: 'Amatic SC', cursive;
   letter-spacing: 3px;
   font-weight: 900;
   padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Amatic SC', cursive;
+  color: #E8D720;
+  text-shadow: 1px 2px rgba(0,0,0,0.3);
+}
+.small {
+  font-size: 16px;
 }
 
 .main {
@@ -96,6 +134,19 @@ h3, h3 a { /*section headings*/
   color: white;
 }
 
+p.circle {
+  text-align: center;
+  line-height: 1.6;
+}
+
+p.hidden {
+  display: none;
+}
+
+p.hidden:hover {
+  display: visible;
+}
+
 /**** DIV STYLES ****/
 .container {
   width: 70%;
@@ -118,7 +169,7 @@ h3, h3 a { /*section headings*/
 .tagline { 
   height: 720px;
   /*color: white;*/
-  background-image: url('/images/swan.jpg');
+  background-image: url('/images/wood.jpg');
   background-size: 100%;
 }
 
@@ -137,15 +188,21 @@ h3, h3 a { /*section headings*/
   overflow: hidden;
 }
 
-.preview:hover {/* if description block*/
-  /*opacity: 0;*/
-}
 
 .description { /*description block*/
-  width: 700px;
-  height: 400px;
-  display: block;
-  background-color: blue;
+  width: 701px;
+  height: 325px;
+  padding: 50px;
+  background-color: rgba(255,255,255,0.95);
+  position: absolute;
+  top: 15px;
+  opacity: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.description:hover {
+  opacity: 1;
 }
 
 .arrow-left {
@@ -165,12 +222,26 @@ h3, h3 a { /*section headings*/
 }
 
 .circle {
-  width: 250px;
-  height: 250px;
-  -webkit-border-radius: 125px;
-  -moz-border-radius: 125px;
-  border-radius: 125px;
-  margin: 60px;
+  width: 350px;
+  height: 310px;
+  -webkit-border-radius: 175px;
+  -moz-border-radius: 175px;
+  border-radius: 175px;
+  margin: 0 auto;
+  padding: 20px 0px 20px 0px;
+}
+
+
+.blog-section {
+  width: 33.333%;
+  height: 100%;
+  display: inline;
+  float: left;
+  margin: 0 auto;
+}
+
+.blog {
+  height: 450px;
 }
 
 /**** NAV STYLES ****/
