@@ -1,24 +1,50 @@
+<div id="navi">
+  <div id="menu" class="default">
+    <ul class="menu pull-left">
+      <a href="#"><li class="bold">NISHA BATRA</li></a>
+    </ul>
+    <ul class="menu menu-center">
+      <a href="#hi"><li class="bold">hi</li></a>
+      <a href="#projects"><li class="bold">projects</li></a>
+      <a href="#blog"><li class="bold">blog</li></a>
+      <a href="#contact"><li class="bold">contact</li></a>
+    </ul>
 
-
-<div class="body">
-    <div class="nav">
-        <div class="pull-right">
-          <a href="#">NISHA BATRA</a>
-        </div>
-        <a href="#">hi</a>
-        <a href="#">projects</a>
-        <a href="#">blog</a>
-        <a href="#">contact</a>
-        <div class="pull-right">
-          buttons
-        </div>
+    <ul class="menu pull-right">
+       <li>buttons</li>
+     </ul>
     </div>
-   <div class="content">
+  </div>
+</div>
+
+<div id="content">
   <%= simple_partial :_welcome %>
   <%= simple_partial :_hi %>
   <%= simple_partial :_projects %>
   <%= simple_partial :_blog %>
   <%= simple_partial :_contact %>
 </div>
-</div>
 
+<!-- JAVASCRIPT -->
+
+<script type="text/javascript">
+$(function(){
+  
+  var menu = $('#menu'),
+    pos = menu.offset();
+    
+    $(window).scroll(function(){
+      if($(this).scrollTop() > pos.top+menu.height() && menu.hasClass('default') && $(this).scrollTop() > 500){
+        menu.fadeOut('fast', function(){
+          $(this).removeClass('default').addClass('fixed').fadeIn('fast');
+        });
+      } else if($(this).scrollTop() <= pos.top+500 && menu.hasClass('fixed')){
+        menu.fadeOut('fast', function(){
+          $(this).removeClass('fixed').addClass('default').fadeOut('fast');
+                    console.log($(this).html());
+        });
+      }
+    });
+
+});
+</script>
