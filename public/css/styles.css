@@ -51,18 +51,13 @@ a {
   opacity: 0.5;
 }
 
-.bold {
-  font-weight: 600;
-}
 
-.bold:hover {
-  color: #E8D720;
-}
 
 hr {
   width: 250px;
   border-top: 0;
   height: 0;
+  margin: 20px auto 20px auto;
 }
 /**** TEXT STYLES ****/
 
@@ -96,14 +91,26 @@ h3, h3 a { /*section headings*/
 }
 
 h4 {
-  font-size: 50px;
+  font-size: 3em;
   font-weight: 600;
-  font-family: 'Amatic SC', cursive;
-  color: #E8D720;
+  font-family: 'Nixie One', cursive;
+  /*text-transform: uppercase;*/
+  font-weight: 400;
+  letter-spacing: 2px;
+  /*color: #E8D720;*/
   text-shadow: 1px 2px rgba(0,0,0,0.3);
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+p {
+  font-size: 18pt;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
 }
 .small {
-  font-size: 16px;
+  font-size: 12pt;
 }
 
 .main {
@@ -141,7 +148,15 @@ p.hidden:hover {
   display: visible;
 }
 
-/**** DIV STYLES ****/
+.bold {
+  font-weight: 600;
+}
+
+.bold:hover {
+  color: #E8D720;
+}
+
+/**** DIV & COMPONENT STYLES ****/
 .container {
   width: 70%;
   margin: 0 auto;
@@ -187,12 +202,13 @@ p.hidden:hover {
   width: 701px;
   height: 325px;
   padding: 50px;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(0,0,0,0.7);
   position: absolute;
   top: 15px;
   opacity: 0;
   text-align: center;
   vertical-align: middle;
+  color: white;
 }
 
 .description:hover {
@@ -281,11 +297,11 @@ p.hidden:hover {
   float: left; 
   padding: 15px 50px 15px 50px;
   height: 100%;
-  font-family: 'Open Sans', cursive;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
   font-size: 1em;
-
 }
+
 .menu-center {
   padding-left: 30%;
 }
