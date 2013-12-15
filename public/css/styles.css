@@ -66,7 +66,7 @@ h1 { /*name*/
   font-family: 'Amatic SC', cursive;
   font-size: 50pt;
   letter-spacing: 5px;
-  padding-top: 180px;
+  padding-top: 240px;
   color: white;
   font-weight: 700;
 }
@@ -74,12 +74,12 @@ h1 { /*name*/
 h2 { /*tagline*/
   text-align: center;
   font-family: 'Nixie One', cursive;
-  font-size: 18pt;
+  font-size: 24pt;
   letter-spacing: 3px;
   font-weight: 100;
   color: white;
   line-height: 1;
-  /*padding-top: 130px*/
+  padding-top: 30px
 }
 
 h3, h3 a { /*section headings*/
@@ -153,7 +153,7 @@ p.hidden:hover {
 }
 
 .bold:hover {
-  color: #E8D720;
+  color: #999999;
 }
 
 /**** DIV & COMPONENT STYLES ****/
@@ -176,7 +176,7 @@ p.hidden:hover {
 }
 
 .tagline { 
-  height: 720px;
+  height: 760px;
   /*color: white;*/
   background-image: url('/images/wood.jpg');
   background-size: 100%;
