@@ -34,6 +34,10 @@ a {
 .white-transparent {
   background-color: rgba(255,255,255, 0.5);
 }
+.black-transparent {
+  background-color: rgba(0,0,0, 0.5);
+}
+
 
 .gray { background-color: #DEDEDE;}
 
@@ -148,6 +152,10 @@ p.hidden:hover {
   display: visible;
 }
 
+.strong {
+  font-weight: 600;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -176,7 +184,7 @@ p.hidden:hover {
 }
 
 .tagline { 
-  height: 760px;
+  height: 750px;
   /*color: white;*/
   background-image: url('/images/wood.jpg');
   background-size: 100%;
@@ -232,13 +240,13 @@ p.hidden:hover {
 }
 
 .circle {
-  width: 350px;
-  height: 310px;
+  width: 250px;
+  height: 250px;
   -webkit-border-radius: 175px;
   -moz-border-radius: 175px;
   border-radius: 175px;
   margin: 0 auto;
-  padding: 20px 0px 20px 0px;
+  padding: 30px 70px 30px 70px;
 }
 
 
