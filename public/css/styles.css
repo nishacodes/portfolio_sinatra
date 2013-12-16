@@ -210,7 +210,7 @@ p.hidden:hover {
   width: 701px;
   height: 325px;
   padding: 50px;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.8);
   position: absolute;
   top: 15px;
   opacity: 0;
@@ -303,7 +303,7 @@ p.hidden:hover {
 
 .menu li {
   float: left; 
-  padding: 15px 50px 15px 50px;
+  padding: 15px 40px 15px 40px;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
