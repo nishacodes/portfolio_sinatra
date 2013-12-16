@@ -21,17 +21,17 @@ module Portfolio
       Pony.mail(:to => 'nishabatra27@gmail.com', 
                 :from => "nishabatra27@gmail.com", 
                 :subject => "#{name} has sent you a message", 
-                :body => "#{message}",
+                :body => "#{message}")
   
-                :via => :smtp,
-                :via_options => { 
-                  :address              => 'smtp.gmail.com', 
-                  :port                 => '587', 
-                  :enable_starttls_auto => true, 
-                  :user_name            => 'nishabatra27@gmail.com', 
-                  :password             => '*password*', 
-                  :authentication       => :plain, 
-                  :domain               => 'localhost.localdomain'})
+                # :via => :smtp,
+                # :via_options => { 
+                #   :address              => 'smtp.gmail.com', 
+                #   :port                 => '587', 
+                #   :enable_starttls_auto => true, 
+                #   :user_name            => 'nishabatra27@gmail.com', 
+                #   :password             => 'redacted', 
+                #   :authentication       => :plain, 
+                #   :domain               => 'localhost.localdomain'})
       erb :index
     end
 
