@@ -43,3 +43,13 @@ module Portfolio
 
   end
 end
+
+# TO DO
+# add social buttons
+# add jquery to slider
+# add smooth transitions btw sections
+# redesign blog section
+# iframes ?
+# fix contact form and add class
+# move javascript into separate file
+# clean up css classes 
