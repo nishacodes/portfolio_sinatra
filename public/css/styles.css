@@ -70,7 +70,7 @@ h1 { /*name*/
   font-family: 'Amatic SC', cursive;
   font-size: 50pt;
   letter-spacing: 5px;
-  padding-top: 240px;
+  padding-top: 200px;
   color: white;
   font-weight: 700;
 }
@@ -184,7 +184,7 @@ p.hidden:hover {
 }
 
 .tagline { 
-  height: 750px;
+  height: 760px;
   /*color: white;*/
   background-image: url('/images/wood.jpg');
   background-size: 100%;
