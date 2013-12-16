@@ -176,7 +176,7 @@ p.hidden:hover {
   position: relative;
 }
 
-.section { /*welcome*/
+.section { 
   width: 100%;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -317,7 +317,15 @@ p.hidden:hover {
 
 .pull-right li {
   float: right;
-
+  padding: 10px 20px 10px 0px
 }
 
+img.icon {
+  height: 25px;
+}
+
+img.icon:hover {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
 
