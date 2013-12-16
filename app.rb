@@ -29,7 +29,7 @@ module Portfolio
                   :port                 => '587', 
                   :enable_starttls_auto => true, 
                   :user_name            => 'nishabatra27@gmail.com', 
-                  :password             => 'Nishad102785!', 
+                  :password             => '*password*', 
                   :authentication       => :plain, 
                   :domain               => 'localhost.localdomain'})
       erb :index

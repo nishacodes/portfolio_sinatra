@@ -40,9 +40,9 @@ a {
 .black { background-color: black;}
 
 .shadow {
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow:    0px 0px 20px rgba(0, 0, 0, 0.15);
-  box-shadow:         0px 0px 20px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow:    0px 0px 30px rgba(0, 0, 0, 0.15);
+  box-shadow:         0px 0px 30px rgba(0, 0, 0, 0.15);
 }
 
 .transparent {
