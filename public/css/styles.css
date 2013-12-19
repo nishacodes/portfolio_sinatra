@@ -1,3 +1,7 @@
+/*yellow: #E8CC17 or #FFCC00*/
+/*light gray: #FAFAFA*/
+/*medium gray: #DEDEDE*/
+
 /**** GENERIC STYLES ****/
 
 body {
@@ -25,7 +29,7 @@ a {
   display: inline-block;
 }
 
-.yellow { background-color: #E8D720;}
+.yellow { background-color: #E8CC17;}
 
 .light { background-color: #FAFAFA;}
 
@@ -63,6 +67,13 @@ hr {
   height: 0;
   margin: 20px auto 20px auto;
 }
+hr-thumb {
+  width: 150px;
+  border-top: 0;
+  height: 0;
+  margin: 20px auto 20px auto;
+}
+
 /**** TEXT STYLES ****/
 
 h1 { /*name*/
@@ -107,14 +118,38 @@ h4 {
   padding-bottom: 40px;
 }
 
+h4.thumb {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: 'Nixie One', cursive;
+  /*text-transform: uppercase;*/
+  font-weight: 400;
+  letter-spacing: 2px;
+  /*color: #E8D720;*/
+  text-shadow: 1px 2px rgba(0,0,0,0.3);
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
 p {
   font-size: 18pt;
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
 }
+
+p.thumb{
+  font-size: 12pt;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;  
+}
 .small {
   font-size: 12pt;
+}
+
+.small-thumb {
+  font-size: 10pt;
 }
 
 .main {
@@ -166,10 +201,17 @@ p.hidden:hover {
 
 /**** DIV & COMPONENT STYLES ****/
 .container {
-  width: 70%;
+  min-width: 600px;
   margin: 0 auto;
   position: relative
 }
+
+.container-wide {
+  width: 90%;
+  margin: 0 auto;
+  position: relative
+}
+
 
 .section1 { /*welcome*/
   width: 100%;
@@ -181,6 +223,14 @@ p.hidden:hover {
   padding-top: 50px;
   padding-bottom: 100px;
   position: relative;
+}
+
+.section-projects { 
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+  min-height: 400px;
 }
 
 .tagline { 
@@ -205,11 +255,24 @@ p.hidden:hover {
   overflow: hidden;
 }
 
+.preview-container-thumb {
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
+  float: left;
+  background-color: white;
+  position: relative;
+  display: inline;
+}
+
+
+
 
 .description { /*description block*/
   width: 701px;
   height: 325px;
-  padding: 50px;
+  padding: 30px;
   background-color: rgba(0,0,0,0.8);
   position: absolute;
   top: 15px;
@@ -219,7 +282,21 @@ p.hidden:hover {
   color: white;
 }
 
-.description:hover {
+.description-thumb { /*description block*/
+  width: 320px;
+  height: 170px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 10px;
+  opacity: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+
+.description:hover, .description-thumb:hover {
   opacity: 1;
 }
 
