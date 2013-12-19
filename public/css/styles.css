@@ -272,7 +272,7 @@ p.hidden:hover {
 .description { /*description block*/
   width: 701px;
   height: 325px;
-  padding: 30px;
+  padding: 51px;
   background-color: rgba(0,0,0,0.8);
   position: absolute;
   top: 15px;
