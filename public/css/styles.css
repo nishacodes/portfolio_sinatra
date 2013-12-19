@@ -38,6 +38,11 @@ a {
 .white-transparent {
   background-color: rgba(255,255,255, 0.5);
 }
+
+.white-transparent {
+  background-color: rgba(255,255,255, 0.7);
+}
+
 .black-transparent {
   background-color: rgba(0,0,0, 0.5);
 }
@@ -265,8 +270,6 @@ p.hidden:hover {
   position: relative;
   display: inline;
 }
-
-
 
 
 .description { /*description block*/
