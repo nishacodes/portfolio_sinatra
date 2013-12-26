@@ -3,18 +3,49 @@
   <div class="container">
     
       <div class="preview-container shadow">
-        <p class="arrow-left"> &lsaquo; </p>
+        
+        <div class="bx-controls-direction">
+        <a class="bx-prev"><p class="arrow-left"> &lsaquo; </p>
         <p class="arrow-right"> &#8250; </p>
-        <img class="preview" src="/images/project2.png"/>
+        </div>
+        <!-- <img class="preview" src="/images/project2.png"/> -->
+        <ul class="bxslider">
+          <li>
+            <img class="preview" src="/images/project1.png" />
+            <a href="http://turntable-playlister.herokuapp.com" target="_blank">
+              <div class="description">
+                <h4>TURNTABLE</h4>
+                <p> An app that lets you listen to music via YouTube streaming</p>
+                <hr>
+                <p class="small">Built with: Ruby, Sinatra</p>
+              </div>
+            </a>
+          </li>
 
-        <a href="http://turntable-playlister.herokuapp.com" target="_blank">
-          <div class="description">
-            <h4>TURNTABLE</h4>
-            <p> An app that lets you listen to music via YouTube streaming</p>
-            <hr>
-            <p class="small">Built with: Ruby, Sinatra</p>
-          </div>
-        </a>
+          <li>
+            <img class="preview" src="/images/project2.png" />
+          </li>
+
+          <li>
+            <img class="preview" src="/images/pic3.jpg" />
+          </li>
+
+          <li>
+            <img class="preview" src="/images/pic4.jpg" />
+          </li>
+        </ul>
+        
       </div>
   </div>
+  
+
 </div>
+
+
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
+
+</script>
