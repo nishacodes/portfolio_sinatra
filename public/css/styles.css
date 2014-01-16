@@ -162,6 +162,7 @@ p.thumb{
   font-size: 20pt;
   line-height: 2;
   letter-spacing: 1px;
+  padding: 20px 100px;
 }
 
 .block {

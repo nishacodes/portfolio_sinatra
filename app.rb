@@ -18,20 +18,20 @@ module Portfolio
       email = params[:email]
       message = params[:message]
 
-      Pony.mail(:to => 'nishabatra27@gmail.com', 
-                :from => "nishabatra27@gmail.com", 
+      Pony.mail(:to => ENV['MY_EMAIL'], 
+                :from => ENV['MY_EMAIL'], 
                 :subject => "#{name} has sent you a message", 
-                :body => "#{message}")
+                :body => "#{message}" + "\n\n" + "Reply to #{name} at #{email}.",
   
-                # :via => :smtp,
-                # :via_options => { 
-                #   :address              => 'smtp.gmail.com', 
-                #   :port                 => '587', 
-                #   :enable_starttls_auto => true, 
-                #   :user_name            => 'nishabatra27@gmail.com', 
-                #   :password             => 'redacted', 
-                #   :authentication       => :plain, 
-                #   :domain               => 'localhost.localdomain'})
+                :via => :smtp,
+                :via_options => { 
+                  :address              => 'smtp.gmail.com', 
+                  :port                 => '587', 
+                  :enable_starttls_auto => true, 
+                  :user_name            => ENV['MY_EMAIL'], 
+                  :password             => ENV['MY_PASSWORD'], 
+                  :authentication       => :plain, 
+                  :domain               => 'localhost.localdomain'})
       erb :index
     end
 
