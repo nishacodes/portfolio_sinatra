@@ -99,7 +99,8 @@ h2 { /*tagline*/
   font-weight: 100;
   color: white;
   line-height: 1;
-  padding-top: 30px
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 h3, h3 a { /*section headings*/
@@ -134,6 +135,14 @@ h4.thumb {
   text-shadow: 1px 2px rgba(0,0,0,0.3);
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+h5 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.2em;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+
 }
 
 p {
@@ -229,6 +238,7 @@ p.hidden:hover {
   padding-top: 50px;
   padding-bottom: 100px;
   position: relative;
+  overflow: auto;
 }
 
 .section-projects { 
@@ -344,6 +354,49 @@ p.hidden:hover {
 }
 
 
+.twitter-follow-button {
+  margin-bottom: 10px;
+}
+
+form {
+  margin: 33px;
+}
+
+form input, button, textarea{
+  margin: 10px;
+  padding: 8px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+form input, textarea{
+  width: 75%;
+}
+
+form button {
+  color: white;
+  width: 100px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.4em;
+}
+
+form button:hover {
+  cursor: pointer;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+  position: inline-block;
+  box-sizing: border-box;
+}
 /**** NAV STYLES ****/
 
 #navi {
