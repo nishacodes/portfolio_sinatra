@@ -355,7 +355,7 @@ p.hidden:hover {
 
 
 .twitter-follow-button {
-  margin-bottom: 10px;
+  margin: 0px 100px 10px 100px;
 }
 
 form {
@@ -382,6 +382,7 @@ form button {
   width: 100px;
   font-family: 'Amatic SC', cursive;
   font-size: 1.4em;
+  margin: 0 100px;
 }
 
 form button:hover {
