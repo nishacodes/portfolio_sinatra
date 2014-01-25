@@ -30,12 +30,12 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border: solid #fff 5px;
-	left: -5px;
-	background: #fff;
+	/*-moz-box-shadow: 0 0 5px #ccc;*/
+	/*-webkit-box-shadow: 0 0 5px #ccc;*/
+	/*box-shadow: 0 0 5px #ccc;*/
+	/*border: solid #fff 5px;*/
+	/*left: -5px;*/
+	/*background: #fff;*/
 }
 
 .bx-wrapper .bx-pager,
@@ -67,6 +67,7 @@
 	font-weight: bold;
 	color: #666;
 	padding-top: 20px;
+	display: none;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -111,7 +112,7 @@
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	background-position: 0 0;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -119,8 +120,8 @@
 	top: 50%;
 	margin-top: -16px;
 	outline: 0;
-	width: 32px;
-	height: 32px;
+	width: 50px;
+	height: 50px;
 	text-indent: -9999px;
 	z-index: 9999;
 }

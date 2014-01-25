@@ -289,7 +289,7 @@ p.hidden:hover {
   padding: 51px;
   background-color: rgba(0,0,0,0.8);
   position: absolute;
-  top: 15px;
+  top: 2px;
   opacity: 0;
   text-align: center;
   vertical-align: middle;
@@ -328,6 +328,18 @@ p.hidden:hover {
   right: -70px;
   top: 150px;
   position: absolute; 
+}
+
+.bx-wrapper .bx-prev {
+  left: -80px;
+  background: url(/images/left.png) no-repeat 0 0px;
+  background-size: 50px 50px;
+}
+
+.bx-wrapper .bx-next {
+  right: -80px;
+  background: url(/images/right.png) no-repeat 0 0px;
+  background-size: 50px 50px;
 }
 
 .circle {
