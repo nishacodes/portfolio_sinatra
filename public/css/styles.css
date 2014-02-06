@@ -238,7 +238,7 @@ p.hidden:hover {
   padding-top: 50px;
   padding-bottom: 100px;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .section-projects { 
@@ -282,6 +282,20 @@ p.hidden:hover {
   display: inline;
 }
 
+.description-button {
+  margin: 30px;
+  padding: 15px 20px;
+  width: 100px;
+  height: 20px;
+  color:black;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.8);
+  display: inline-block;
+}
+
+.description-button:hover {
+  background-color: rgba(255,255,255,1);
+}
 
 .description { /*description block*/
   width: 701px;
@@ -289,7 +303,7 @@ p.hidden:hover {
   padding: 51px;
   background-color: rgba(0,0,0,0.8);
   position: absolute;
-  top: 2px;
+  top: 0px;
   opacity: 0;
   text-align: center;
   vertical-align: middle;
@@ -330,19 +344,26 @@ p.hidden:hover {
   position: absolute; 
 }
 
-.bx-wrapper .bx-prev {
+.carousel-control {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  border: 0;
+}
+
+a.left {
   left: -80px;
   background: url(/images/left.png) no-repeat 0 0px;
   background-size: 50px 50px;
 }
 
-.bx-wrapper .bx-next {
+.carousel-control.right {
   right: -80px;
   background: url(/images/right.png) no-repeat 0 0px;
   background-size: 50px 50px;
 }
 
-.circle {
+.blog-preview {
   width: 250px;
   height: 250px;
   -webkit-border-radius: 175px;
@@ -365,13 +386,16 @@ p.hidden:hover {
   height: 450px;
 }
 
+#twitter-widget-0 {
+  margin: 20px;
+}
 
-.twitter-follow-button {
-  margin: 0px 100px 10px 100px;
+.follow-button {
+  height: 50px;
 }
 
 form {
-  margin: 33px;
+  margin: 10px;
 }
 
 form input, button, textarea{
@@ -476,3 +500,54 @@ img.icon:hover {
   opacity: 0.5;
 }
 
+/* CAROUSEL */
+#carousel_inner {  
+float:left; /* important for inline positioning */  
+width:230px; /* important (this width = width of list item(including margin) * items shown */  
+overflow: hidden;  /* important (hide the items outside the div) */  
+/* non-important styling bellow */  
+background: #F0F0F0;  
+}  
+  
+#carousel_ul {  
+position:relative;  
+left:-210px; /* important (this should be negative number of list items width(including margin) */  
+list-style-type: none; /* removing the default styling for unordered list items */  
+margin: 0px;  
+padding: 0px;  
+width:9999px; /* important */  
+/* non-important styling bellow */  
+padding-bottom:10px;  
+}  
+  
+#carousel_ul li{  
+float: left; /* important for inline positioning of the list items */  
+width:200px;  /* fixed width, important */  
+/* just styling bellow*/  
+padding:0px;  
+height:110px;  
+background: #000000;  
+margin-top:10px;  
+margin-bottom:10px;  
+margin-left:5px;  
+margin-right:5px;  
+}  
+  
+#carousel_ul li img {  
+.margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/  
+/* styling */  
+cursor:pointer;  
+cursor: hand;  
+border:0px;  
+}  
+#left_scroll, #right_scroll{  
+float:left;  
+height:130px;  
+width:15px;  
+background: #C0C0C0;  
+}  
+#left_scroll img, #right_scroll img{  
+/*styling*/  
+cursor: pointer;  
+cursor: hand;  
+}  
