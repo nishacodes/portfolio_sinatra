@@ -4,10 +4,7 @@ require 'pony'
 
 module Portfolio
   class App < Sinatra::Application
-    
-    before do 
-      
-    end
+  
 
     get '/' do
       erb :index

@@ -6,6 +6,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    newrelic_rpm (3.7.2.195)
     polyglot (0.3.3)
     pony (1.6.2)
       mail (>= 2.0)
@@ -42,6 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  newrelic_rpm
   pony (~> 1.6.2)
   shotgun
   sinatra
