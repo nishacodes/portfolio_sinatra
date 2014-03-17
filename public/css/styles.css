@@ -169,9 +169,10 @@ p.thumb{
 .main {
   color: black;
   font-size: 20pt;
-  line-height: 2;
+  line-height: 2.2;
   letter-spacing: 1px;
   padding: 20px 100px;
+  font-weight: 300;
 }
 
 .block {
@@ -231,6 +232,14 @@ p.hidden:hover {
 .section1 { /*welcome*/
   width: 100%;
   position: relative;
+}
+
+#hi {
+  height: 500px;
+}
+
+#hi h3 {
+  padding-top: 70px;
 }
 
 .section { 
