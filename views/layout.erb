@@ -3,8 +3,9 @@
   <head>
     <title>Nisha Batra </title>
 
-    <link href='http://fonts.googleapis.com/css?family=Nixie+One|Parisienne|Gilda+Display|Oleo+Script+Swash+Caps|Simonetta|PT+Mono|Josefin+Sans|Londrina+Outline|Alegreya+Sans|Open+Sans+Condensed:300|Open+Sans|Varela+Round|Amatic+SC|Text+Me+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One|Parisienne|Gilda+Display|Oleo+Script+Swash+Caps|Simonetta|PT+Mono|Josefin+Sans|Londrina+Outline|Alegreya+Sans|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Varela+Round|Amatic+SC|Text+Me+One' rel='stylesheet' type='text/css'>
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/foundation.min.css" rel="stylesheet" type="text/css"/>
     <link href="/css/normalize_styles.css" rel="stylesheet" type="text/css"/>
     <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
     <script>
@@ -17,32 +18,21 @@
       ga('send', 'pageview');
 
     </script>
+    
   </head> 
   
   <body>
       
-      <%= yield %>
-      <!-- jQuery library (served from Google) -->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-      <script src="/bootstrap/js/bootstrap.min.js"></script>
-      <script type="text/javascript">
-        $(function(){
-          var menu = $('#menu'),
-            pos = menu.offset();
-            $(window).scroll(function(){
-              if($(this).scrollTop() > pos.top+menu.height() && menu.hasClass('default') && $(this).scrollTop() > 500){
-                menu.fadeOut('fast', function(){
-                  $(this).removeClass('default').addClass('fixed').fadeIn('fast');
-                });
-              } else if($(this).scrollTop() <= pos.top+500 && menu.hasClass('fixed')){
-                menu.fadeOut('fast', function(){
-                  $(this).removeClass('fixed').addClass('default').fadeOut('fast');
-                            console.log($(this).html());
-                });
-              }
-            });
-        });
-      </script>
+    <%= yield %>
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/interaction.js"></script>
+    <script src="/js/vendor/typed.js"></script>
+    <script src="/js/vendor/foundation.js"></script>
+    <script src="/js/vendor/foundation.magellan.js"></script>
+    <script src="/js/vendor/foundation.reveal.js"></script>
   </body>
 
 </html>

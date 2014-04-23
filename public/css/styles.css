@@ -1,3 +1,5 @@
+
+
 /*yellow: #E8CC17 or #FFCC00*/
 /*light gray: #FAFAFA*/
 /*medium gray: #DEDEDE*/
@@ -65,7 +67,6 @@ a {
 }
 
 
-
 hr {
   width: 250px;
   border-top: 0;
@@ -83,24 +84,26 @@ hr-thumb {
 
 h1 { /*name*/
   text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 50pt;
-  letter-spacing: 5px;
+  font-family: 'Open Sans';
+  font-size: 28pt;
+  letter-spacing: 10px;
   padding-top: 210px;
-  color: white;
-  font-weight: 700;
+  /*color: white;*/
+  font-weight: 600;
+  display: none;
 }
 
 h2 { /*tagline*/
   text-align: center;
-  font-family: 'Nixie One', cursive;
-  font-size: 24pt;
+  font-family: 'Open Sans';
+  font-size: 16pt;
   letter-spacing: 3px;
   font-weight: 100;
-  color: white;
+  /*color: white;*/
   line-height: 1;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
+  font-weight: 100;
 }
 
 h3, h3 a { /*section headings*/
@@ -256,13 +259,37 @@ p.hidden:hover {
   padding-bottom: 100px;
   position: relative;
   min-height: 400px;
+  display: inline-block;
+}
+
+.section-collage {
+  height: 1000px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.collage {
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  max-width: 1000px;
+  min-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .tagline { 
   height: 700px;
   /*color: white;*/
-  background-image: url('/images/wood.jpg');
-  background-size: 100%;
+  /*background-image: url('/images/wood.jpg');*/
+  /*background-size: 100%;*/
+  background-color: white;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 
 
@@ -443,6 +470,24 @@ form button:hover {
   position: inline-block;
   box-sizing: border-box;
 }
+
+.button-round {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  padding: 0px;
+
+}
+
+.button-round:hover{
+  color:white;
+  background-color: black;
+}
+
 /**** NAV STYLES ****/
 
 #navi {
@@ -580,4 +625,101 @@ cursor: hand;
   -webkit-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.2);
 -moz-box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.2);
 box-shadow: 2px 2px 22px 1px rgba(0,0,0,0.2);
+}
+
+/* TYPE EFFECT */
+
+#typed-cursor{
+  opacity: 0; /* it's not blinking so made invisible */
+  font-weight: 100;
+  // add prefixes
+  animation: blink 0.7s infinite;
+}
+
+@-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+/* COLLAGE STYLES */
+
+.col3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+}
+
+.col4 {
+  width: 33.3%;
+  display: inline-block;
+  float: left;
+}
+
+.col6 {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.col8 {
+  width: 66.7%;
+  display: inline-block;
+  float: left;
+}
+
+
+.col9 {
+  width: 75%;
+  display: inline-block;
+  float: left;
+}
+
+.col12 {
+  width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+
+.hi {
+  background-color: blue;
+  height: 300px;
+  font-size: 40px;
+  padding: 80px 20px 20px 20px;
+ 
+}
+
+.nyc {
+  height: 300px;
+  background-color: yellow;
+}
+
+.divider {
+  height: 80px;
+  background: black;
+  color: white;
+}
+
+.project {
+  background-color: gray;
+  color: white;
+  height: 300px;
+  /*border: 1px solid*/
+}
+
+.social {
+  background-color: pink;
+  height: 400px;
+}
+
+.info {
+  height: 300px;
+  background-color: white;
+}
+
+.contact {
+  height: 400px;
+  background-color: black;
+  color: white;
 }
