@@ -1,5 +1,21 @@
 $(document).ready(function(){
+
+  // FULLPAGE EFFECT   
+  $('#fullpage').fullpage({
+    anchors: ['firstPage', 'secondPage'],
+    menu: '#menu'
+  });
   
+  $('#showExamples').click(function(e){
+    e.stopPropagation();
+    $('#examplesList').toggle();
+  });
+  
+  $('html').click(function(){
+    $('#examplesList').hide();
+  });
+    
+
   // TEXT TYPE EFFECT
   $(".overlay").fadeOut(1500, function(){
     $("h1").fadeIn(1000, function(){
@@ -48,22 +64,10 @@ $(document).ready(function(){
   });
 
   // Carousel
-  $('.carousel').carousel();
+  // $('.carousel').carousel();
   
 
   // Masonry
-  // var $gridContainer = $('#grid-container');
-  
-  // // initialize
-  // $gridContainer.masonry({
-  //   columnWidth: 200,
-  //   itemSelector: '.item'
-  // });
-
-  // var msnry = $gridContainer.data('masonry');
-
-
-
   var container = document.querySelector('.masonry');
   var msnry = new Masonry( container, {
     columnWidth: 60
@@ -80,7 +84,27 @@ $(document).ready(function(){
     msnry.layout();
   });
 
+  $(".item").mouseover(function(){
+      $(this).find(".top").hide();  
+  })
 
+  $(".item").mouseleave(function(){
+    if($(this).hasClass('gigante')){
+      // 
+    }else {
+      $(this).find(".top").show();
+    }
+  })
+
+  $(".middle").click(function(){
+    $(this).hide();
+    $(this).parent().trigger( "click" );
+  })
+
+  $(".back").click(function(){
+    $(this).siblings().show();
+    $(this) .parent().trigger( "click" );
+  })
 
 
 })

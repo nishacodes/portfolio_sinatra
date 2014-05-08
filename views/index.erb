@@ -1,12 +1,28 @@
-<%= simple_partial :_header %>
+<%#= simple_partial :_header %>
 
-<div id="content">
-  <%= simple_partial :_welcome %>
+<!-- <div id="content"> -->
+  <%#= simple_partial :_welcome %>
   <%#= simple_partial :_hi %>
   <%#= simple_partial :_projects %>
   <%#= simple_partial :_blog %>
   <%#= simple_partial :_contact %>
-  <%= simple_partial :_collage %>
+  <%#= simple_partial :_collage %>
+<!-- </div> -->
+
+<!-- <ul id="menu">
+  <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+  <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+</ul> -->
+
+
+<div id="fullpage" style="height: 100%; position: relative; top: 0px;">
+  <div class="section active table" id="section0" data-anchor="firstPage"> 
+    <%= simple_partial :_welcome %>
+  </div>
+  <div class="section" id="section1" data-anchor="secondPage">
+    <%= simple_partial :_grid %>
+  </div>
 </div>
+
 
 
