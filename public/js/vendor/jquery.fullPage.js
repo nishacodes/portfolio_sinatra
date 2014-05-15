@@ -28,7 +28,7 @@
 			'loopTop': false,
 			'loopHorizontal': true,
 			'autoScrolling': true,
-			'scrollOverflow': false,
+			'scrollOverflow': true, // changed from false
 			'css3': false,
 			'paddingTop': 0,
 			'paddingBottom': 0,
@@ -1045,6 +1045,7 @@
 				}
 				
 				$(this).css('height', windowsHeight + 'px');
+
 
 				//resizing the scrolling divs
 				if(options.scrollOverflow){

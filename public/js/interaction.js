@@ -85,14 +85,14 @@ $(document).ready(function(){
   });
 
   $(".item").mouseover(function(){
-      $(this).find(".top").hide();  
+      $(this).find(".top").fadeOut(200);  
   })
 
   $(".item").mouseleave(function(){
     if($(this).hasClass('gigante')){
       // 
     }else {
-      $(this).find(".top").show();
+      $(this).find(".top").fadeIn(500);
     }
   })
 
