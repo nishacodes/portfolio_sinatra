@@ -62,9 +62,6 @@ $(document).ready(function(){
   //       }
   //     });
   // });
-
-  // Carousel
-  // $('.carousel').carousel();
   
 
   // Masonry
@@ -80,7 +77,8 @@ $(document).ready(function(){
     }
     // change size of item via class
     classie.toggle( event.target, 'gigante' );
-    $(this).find('.content').toggle();
+    // $(this).find('.content, .gradient-left').toggle();
+    // console.log($(this).find('.content'));
     // trigger layout
     msnry.layout();
   });
@@ -101,11 +99,13 @@ $(document).ready(function(){
   $(".middle").click(function(){
     $(this).hide();
     $(this).parent().trigger( "click" );
+    $(this).parent().find('.content, .gradient-left').fadeIn(500);
   })
 
   $(".back").click(function(){
     $(this).siblings().show();
     $(this) .parent().trigger( "click" );
+    $(this).parent().find('.content, .gradient-left').hide();
   })
 
   // HI
