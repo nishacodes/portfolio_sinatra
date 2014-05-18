@@ -118,12 +118,24 @@ $(document).ready(function(){
       });
   })
 
+  // BLOG
+  $(".blog").on({
+    'mouseover': function(){
+      $(this).find("p").typed({
+        strings: ["Musings on Ruby and JavaScript  >>"]
+      })
+    },
+    'mouseleave': function(){
+      $(this).find("p").text("");
+    }
+  });
+
   // NYC
   $('.nyc').on({
     'mouseenter': function(){
       $(this).animate({
-        'background-position-x': '-100px',
-        'background-position-y': '-10px'
+        'background-position-x': '-110px',
+        'background-position-y': '-20px'
       }, 6500, 'linear'); 
     },
     'mouseleave': function(){
