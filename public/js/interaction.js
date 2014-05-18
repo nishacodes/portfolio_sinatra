@@ -77,8 +77,7 @@ $(document).ready(function(){
     }
     // change size of item via class
     classie.toggle( event.target, 'gigante' );
-    // $(this).find('.content, .gradient-left').toggle();
-    // console.log($(this).find('.content'));
+    
     // trigger layout
     msnry.layout();
   });
