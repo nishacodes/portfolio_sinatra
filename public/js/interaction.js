@@ -5,16 +5,8 @@ $(document).ready(function(){
     anchors: ['welcome', 'about'],
     menu: '#menu'
   });
-  
-  // $('#showExamples').click(function(e){
-  //   e.stopPropagation();
-  //   $('#examplesList').toggle();
-  // });
-  
-  // $('html').click(function(){
-  //   $('#examplesList').hide();
-  // });
-    
+
+  console.log(window.innerWidth);
 
   // TEXT TYPE EFFECT
   $(".overlay").fadeOut(1500, function(){
@@ -29,45 +21,17 @@ $(document).ready(function(){
   });
   $(".button-round").delay(5500).fadeIn(1000);
 
-  // // SMOOTH SCROLL
-  // $('a[href*=#]:not([href=#])').click(function() {
-  // if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-  //     || location.hostname == this.hostname) {
-
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //        if (target.length) {
-  //          $('html,body').animate({
-  //              scrollTop: target.offset().top
-  //         }, 1000);
-  //         return false;
-  //     }
-  //   }
-  // });
-
-  // STICKY NAV
-  // $(function(){
-  //   var menu = $('#menu'),
-  //     pos = menu.offset();
-  //     $(window).scroll(function(){
-  //       if($(this).scrollTop() > pos.top+menu.height() && menu.hasClass('default') && $(this).scrollTop() > 500){
-  //         menu.fadeOut('fast', function(){
-  //           $(this).removeClass('default').addClass('fixed').fadeIn('fast');
-  //         });
-  //       } else if($(this).scrollTop() <= pos.top+500 && menu.hasClass('fixed')){
-  //         menu.fadeOut('fast', function(){
-  //           $(this).removeClass('fixed').addClass('default').fadeOut('fast');
-  //                     console.log($(this).html());
-  //         });
-  //       }
-  //     });
-  // });
-  
-
   // Masonry
   var container = document.querySelector('.masonry');
+  var width = (function(){
+    if (window.innerWidth >= 1000){
+      return 80;
+    } else {
+      return 60;
+    }
+  })();
   var msnry = new Masonry( container, {
-    columnWidth: 60
+    columnWidth: width
   });
 
   eventie.bind( container, 'click', function( event ) {
@@ -199,11 +163,10 @@ $(document).ready(function(){
     }
   })
 
-$(".contact, .blog").on('click', function(e){
-  // e.preventDefault();
-  $(this).removeClass('gigante');
-})
-
+  $(".contact, .blog").on('click', function(e){
+    // e.preventDefault();
+    $(this).removeClass('gigante');
+  })
 
 })
 
