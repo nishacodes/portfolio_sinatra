@@ -98,13 +98,13 @@ $(document).ready(function(){
   $(".middle").click(function(){
     $(this).hide();
     $(this).parent().trigger( "click" );
-    $(this).parent().find('.content, .gradient-left').fadeIn(500);
+    $(this).parent().find('.content, .gradient-left, .gradient-left-dark, .gradient-right').fadeIn(500);
   })
 
   $(".back").click(function(){
     $(this).siblings().show();
     $(this) .parent().trigger( "click" );
-    $(this).parent().find('.content, .gradient-left').hide();
+    $(this).parent().find('.content, .gradient-left,  .gradient-left-dark, .gradient-right').hide();
   })
 
   // HI

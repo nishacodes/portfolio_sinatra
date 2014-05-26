@@ -35,7 +35,7 @@ p.description {
 .white { background-color: white;}
 
 .yellow {
-  color: #ece400;
+  color: #E3DB02;
 }
 
 .gray {
@@ -165,10 +165,26 @@ li {
   font-weight: 500;
 }
 
-li:hover {
+ul.red li:hover {
   background-color: #F03737;
   color: white;
 }
+
+ul.teal li:hover {
+  background-color: #59bdbd;
+  color: white;
+}
+
+ul.turquoise li:hover {
+  background-color: #50a0ba;
+  color: white;
+}
+
+ul.bluegray li:hover {
+  background-color: #a6b4c2;
+  color: white;
+}
+
 
 ul.social {
   position: absolute;
@@ -184,7 +200,7 @@ ul.social li {
 }
 
 ul.social li:hover {
-  color: #ece400;
+  color: #E3DB02;
   background: none;
 }
 
@@ -318,7 +334,7 @@ ul.social li:hover {
 
 .hi:hover, .blog:hover {
   color: white;
-  background-color: #ece400;
+  background-color: #E3DB02;
 }
 
 .blog {
@@ -377,13 +393,13 @@ ul.social li:hover {
 }
 
 .localist .top{
-  background-image: url('/images/localist-large-bw.jpg');
+  background-image: url('/images/localist-large-bw2.jpg');
   background-size: 150%;
   background-position: -100px 0px;
 }
 
 .localist .middle {
-  background-image: url('/images/localist-large-color.jpg');
+  background-image: url('/images/localist-large-color2.jpg');
   background-size: 150%;
   background-position: -100px 0px;
 
@@ -409,6 +425,20 @@ ul.social li:hover {
   background: linear-gradient(to right, rgba(0,0,0,0.4) , rgba(0,0,0,0.1)); /* Standard syntax */
   display: none;
 }
+
+.gradient-left-dark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-right: 570px;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) , rgba(0,0,0,0.2)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0,0,0,0.65) , rgba(0,0,0,0.2)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(0,0,0,0.65) , rgba(0,0,0,0.2)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0,0,0,0.65) , rgba(0,0,0,0.2)); /* Standard syntax */
+  display: none;
+}
+
 
 
 .gradient-right {
@@ -453,6 +483,14 @@ ul.social li:hover {
   background-size: 120%;
 }
 
+.clapforashley .back {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/clapforashley.gif');
+  background-size: 100%;
+}
+
+
 .csshacks .top {
   background-image: url('/images/csshacks-large-bw.jpg');
   background-size: 180%;
@@ -465,6 +503,12 @@ ul.social li:hover {
   background-position: -70px 0px;
 }
 
+.csshacks .back {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/csshacks-full.jpg');
+  background-size: 100%;
+}
 .content {
   padding-left: 10px;
   padding-top: 10px;
@@ -543,7 +587,7 @@ a.border-button:hover {
 }
 
 .jquery {
-  background-color: #ece400;
+  background-color: #E3DB02;
 }
 
 .d3 {
