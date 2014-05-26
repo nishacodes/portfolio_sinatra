@@ -2,18 +2,18 @@ $(document).ready(function(){
 
   // FULLPAGE EFFECT   
   $('#fullpage').fullpage({
-    anchors: ['firstPage', 'secondPage'],
+    anchors: ['welcome', 'about'],
     menu: '#menu'
   });
   
-  $('#showExamples').click(function(e){
-    e.stopPropagation();
-    $('#examplesList').toggle();
-  });
+  // $('#showExamples').click(function(e){
+  //   e.stopPropagation();
+  //   $('#examplesList').toggle();
+  // });
   
-  $('html').click(function(){
-    $('#examplesList').hide();
-  });
+  // $('html').click(function(){
+  //   $('#examplesList').hide();
+  // });
     
 
   // TEXT TYPE EFFECT
@@ -29,21 +29,21 @@ $(document).ready(function(){
   });
   $(".button-round").delay(5500).fadeIn(1000);
 
-  // SMOOTH SCROLL
-  $('a[href*=#]:not([href=#])').click(function() {
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-      || location.hostname == this.hostname) {
+  // // SMOOTH SCROLL
+  // $('a[href*=#]:not([href=#])').click(function() {
+  // if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+  //     || location.hostname == this.hostname) {
 
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-         if (target.length) {
-           $('html,body').animate({
-               scrollTop: target.offset().top
-          }, 1000);
-          return false;
-      }
-    }
-  });
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //        if (target.length) {
+  //          $('html,body').animate({
+  //              scrollTop: target.offset().top
+  //         }, 1000);
+  //         return false;
+  //     }
+  //   }
+  // });
 
   // STICKY NAV
   // $(function(){
@@ -77,6 +77,8 @@ $(document).ready(function(){
     } else if (classie.has( event.target, 'contact')){
       return;
     } else if (classie.has( event.target, 'blog')){
+      return;
+    } else if (classie.has( event.target, 'code')){
       return;
     }
     // change size of item via class
