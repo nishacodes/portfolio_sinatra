@@ -132,17 +132,34 @@ $(document).ready(function(){
       $(this).find("p").text("");
     }
   });
+  
 
+  var nycPosition = -10;
+  var direction = "left";
   // NYC
   $('.nyc').on({
     'mouseenter': function(){
-      $(this).animate({
-        'background-position-x': '-110px',
-        'background-position-y': '-20px'
-      }, 6500, 'linear'); 
+      if (nycPosition < 109 && direction =="right") {
+        var speed = (-nycPosition - 10)*100;
+        $(this).animate({
+          'background-position-x': '-10px',
+          'background-position-y': '-20px'
+        }, speed, 'linear'); 
+        direction = "left";
+      } else {
+        var speed = (110 + nycPosition)*100;
+        $(this).animate({
+          'background-position-x': '-110px',
+          'background-position-y': '-20px'
+        }, speed, 'linear'); 
+        direction = "right";
+      }
+      
     },
     'mouseleave': function(){
       $(this).stop();
+      nycPosition = parseInt($(this).css('background-position-x'));
+      console.log(nycPosition);
     }
   });
 
