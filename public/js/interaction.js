@@ -74,6 +74,10 @@ $(document).ready(function(){
     // don't proceed if item was not clicked on
     if ( !classie.has( event.target, 'item' ) ) {
       return;
+    } else if (classie.has( event.target, 'contact')){
+      return;
+    } else if (classie.has( event.target, 'blog')){
+      return;
     }
     // change size of item via class
     classie.toggle( event.target, 'gigante' );
@@ -110,7 +114,7 @@ $(document).ready(function(){
   // HI
   $(".hi").mouseover(function(){
     $(this).find("h3.type").typed({
-        strings: ["I'm Nisha"],
+        strings: [" I'm Nisha"],
         typeSpeed: 30,
         backDelay: 700, // pause before backspacing
         backSpeed: 30
@@ -176,7 +180,10 @@ $(document).ready(function(){
     }
   })
 
-
+$(".contact, .blog").on('click', function(e){
+  // e.preventDefault();
+  $(this).removeClass('gigante');
+})
 
 
 })
