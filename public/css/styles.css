@@ -216,6 +216,10 @@ ul.social li:hover {
   background-color: #F5F5F5;
 }
 
+#section1 > .tableCell {
+  vertical-align: top;
+}
+
 .button-round {
   border-radius: 50%;
   width: 80px;
@@ -683,6 +687,8 @@ a.border-button {
 
 
   /* Item sizes */
+  
+
   .masonry .item {
     width:  400px;
     height: 400px;
@@ -717,10 +723,10 @@ a.border-button {
   /* Code block heights */ 
   
   .half-small {
-    height: 150px;
+    height: 140px;
     width: 50%;
     background-color: #f1f0db;
-    padding: 60px 0px;
+    padding: 50px 0px;
   }
 
   .half-med {

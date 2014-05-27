@@ -20,36 +20,48 @@ $(document).ready(function(){
   $(".button-round").delay(5500).fadeIn(1000);
 
   // Masonry
-  var container = document.querySelector('.masonry');
-  var width = (function(){
-    if (window.innerWidth >= 1600){
-      return 80;
-    } else {
-      return 60;
-    }
-  })();
-  var msnry = new Masonry( container, {
-    columnWidth: width,
-    isFitWidth: true
-  });
 
-  eventie.bind( container, 'click', function( event ) {
-    // don't proceed if item was not clicked on
-    if ( !classie.has( event.target, 'item' ) ) {
-      return;
-    } else if (classie.has( event.target, 'contact')){
-      return;
-    } else if (classie.has( event.target, 'blog')){
-      return;
-    } else if (classie.has( event.target, 'code')){
-      return;
-    }
-    // change size of item via class
-    classie.toggle( event.target, 'gigante' );
-    
-    // trigger layout
-    msnry.layout();
-  });
+  function masonry(){
+
+    var container = document.querySelector('.masonry');
+    var width = (function(){
+      if (window.innerWidth >= 1600){
+        return 80;
+      } else {
+        return 60;
+      }
+    })();
+    var msnry = new Masonry( container, {
+      columnWidth: width,
+      isFitWidth: true
+    });
+
+    console.log(msnry.columnWidth);
+
+    eventie.bind( container, 'click', function( event ) {
+      // don't proceed if item was not clicked on
+      if ( !classie.has( event.target, 'item' ) ) {
+        return;
+      } else if (classie.has( event.target, 'contact')){
+        return;
+      } else if (classie.has( event.target, 'blog')){
+        return;
+      } else if (classie.has( event.target, 'code')){
+        return;
+      }
+      // change size of item via class
+      classie.toggle( event.target, 'gigante' );
+      
+      // trigger layout
+      msnry.layout();
+    });
+  }
+
+  masonry();
+
+  $(window).resize(function(){
+    masonry();
+  })
 
   // ITEM ANIMATION
   $(".item").on({
