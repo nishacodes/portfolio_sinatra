@@ -59,9 +59,9 @@ $(document).ready(function(){
 
   masonry();
 
-  $(window).resize(function(){
-    masonry();
-  })
+  // $(window).resize(function(){
+    // masonry();
+  // })
 
   // ITEM ANIMATION
   $(".item").on({
