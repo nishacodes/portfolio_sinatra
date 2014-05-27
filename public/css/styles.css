@@ -36,7 +36,7 @@ p.description {
 .white { background-color: white;}
 
 .yellow {
-  color: #E3DB02;
+  color: #EBE307;
 }
 
 .gray {
@@ -202,7 +202,7 @@ ul.social li {
 }
 
 ul.social li:hover {
-  color: #E3DB02;
+  color: #EBE307;
   background: none;
 }
 
@@ -210,6 +210,10 @@ ul.social li:hover {
 .section1 { /*welcome*/
   width: 100%;
   position: relative;
+}
+
+#section1 {
+  background-color: #F5F5F5;
 }
 
 .button-round {
@@ -262,8 +266,9 @@ ul.social li:hover {
 }
 
 .masonry {
-  background: #EEE;
-  width: 100%;
+  background: #F5F5F5;
+  /*width: 100%;*/
+  margin: 0 auto;
 }
 
 /* clearfix */
@@ -335,18 +340,18 @@ ul.social li:hover {
 }
 
 .hi .middle{
-  background: #E3DB02;
+  background: #EBE307;
   color: white;
 }
 
 .hi .back {
-  background: #E3DB02;
+  background: #EBE307;
   color: white;
 }
 
 /*.hi:hover, */.blog:hover {
   color: white;
-  background-color: #E3DB02;
+  background-color: #EBE307;
 }
 
 .blog {
@@ -593,7 +598,7 @@ a.border-button:hover {
 }
 
 .jquery {
-  background-color: #E3DB02;
+  background-color: #EBE307;
 }
 
 .d3 {
@@ -609,7 +614,73 @@ a.border-button:hover {
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1600px) {
+
+  p.category {
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+  p.description {
+    padding: 15px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Nixie One', cursive;
+    line-height: 1.5;
+    font-size: 16pt;
+  }
+
+.blog .middle p, .blog .back p {
+  font-size: 18pt;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 20px;
+  display: inline-block;
+  float: left;
+  line-height: 1.4;
+}
+  ul {
+    list-style: none;
+    padding: 13px;
+    margin-bottom: 30px;
+  }
+
+  li {
+    /*background-color: white;*/
+    /*color: #747474;*/
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 7px 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+  }
+
+  .gradient-left {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-right: 750px;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.4) , rgba(0,0,0,0.1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0,0,0,0.4) , rgba(0,0,0,0.1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(0,0,0,0.4) , rgba(0,0,0,0.1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0,0,0,0.4) , rgba(0,0,0,0.1)); /* Standard syntax */
+  display: none;
+}
+
+a.border-button {
+  /*color: white;*/
+  /*border: 2px solid white;*/
+  /*padding: 10px 20px;*/
+  margin-left: 17px;
+  font-weight: 500;
+  font-size: 12pt;
+  /*text-transform: uppercase;*/
+}
+
 
   /* Item sizes */
   .masonry .item {
@@ -676,7 +747,7 @@ a.border-button:hover {
 
 
   .jquery {
-    background-color: #E3DB02;
+    background-color: #EBE307;
   }
 
   .d3 {

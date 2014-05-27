@@ -6,8 +6,6 @@ $(document).ready(function(){
     menu: '#menu'
   });
 
-  console.log(window.innerWidth);
-
   // TEXT TYPE EFFECT
   $(".overlay").fadeOut(1500, function(){
     $("h1").fadeIn(1000, function(){
@@ -24,14 +22,15 @@ $(document).ready(function(){
   // Masonry
   var container = document.querySelector('.masonry');
   var width = (function(){
-    if (window.innerWidth >= 1000){
+    if (window.innerWidth >= 1600){
       return 80;
     } else {
       return 60;
     }
   })();
   var msnry = new Masonry( container, {
-    columnWidth: width
+    columnWidth: width,
+    isFitWidth: true
   });
 
   eventie.bind( container, 'click', function( event ) {
@@ -100,20 +99,20 @@ $(document).ready(function(){
   });
   
 
-  var nycPosition = -10;
+  var lastPosition = -10;
   var direction = "left";
   // NYC
   $('.nyc').on({
     'mouseenter': function(){
-      if (nycPosition < 109 && direction =="right") {
-        var speed = (-nycPosition - 10)*100;
+      if (lastPosition < 109 && direction =="right") {
+        var speed = (-lastPosition - 10)*100;
         $(this).animate({
           'background-position-x': '-10px',
           'background-position-y': '-20px'
         }, speed, 'linear'); 
         direction = "left";
       } else {
-        var speed = (110 + nycPosition)*100;
+        var speed = (110 + lastPosition)*100;
         $(this).animate({
           'background-position-x': '-110px',
           'background-position-y': '-20px'
@@ -124,8 +123,7 @@ $(document).ready(function(){
     },
     'mouseleave': function(){
       $(this).stop();
-      nycPosition = parseInt($(this).css('background-position-x'));
-      console.log(nycPosition);
+      lastPosition = parseInt($(this).css('background-position-x'));
     }
   });
 
