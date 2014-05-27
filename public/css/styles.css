@@ -220,6 +220,10 @@ ul.social li:hover {
   vertical-align: top;
 }
 
+#section0 {
+  background-color: black;
+}
+
 .button-round {
   border-radius: 50%;
   width: 80px;
@@ -562,9 +566,10 @@ a.border-button:hover {
   font-size: 20pt;
   font-weight: 500;
   display: none;
+  opacity: 1;
 }
 
-.block:hover {
+.middle .block:hover {
   opacity: 0.85;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
   filter: alpha(opacity=85);

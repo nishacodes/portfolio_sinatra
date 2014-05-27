@@ -7,17 +7,17 @@ $(document).ready(function(){
   });
 
   // TEXT TYPE EFFECT
-  $(".overlay").fadeOut(1500, function(){
-    $("h1").fadeIn(1000, function(){
+  $("#section0").animate({'background-color': 'white'}, 500, function(){
+    $("#section0, h1").delay(500).fadeIn(1000, function(){
       $("h2").typed({
-        strings: ["developer. ^400 designer. ^400 dreamer."],
-        typeSpeed: 20,
+        strings: ["^800 developer. ^400 designer. ^400 dreamer."],
+        typeSpeed: 10,
         backDelay: 700, // pause before backspacing
         backSpeed: 30
       });
     });
   });
-  $(".button-round").delay(5500).fadeIn(1000);
+  $(".button-round").delay(4500).fadeIn(1000);
 
   // Masonry
 
