@@ -55,8 +55,8 @@ hr {
 h1 { /*name*/
   text-align: center;
   font-family: 'Open Sans';
-  font-size: 48pt;
-  letter-spacing: 10px;
+  font-size: 2em;
+  letter-spacing: 5px;
   /*padding-top: 210px;*/
   /*color: white;*/
   font-weight: 500;
@@ -67,8 +67,8 @@ h1 { /*name*/
 h2 { /*tagline*/
   text-align: center;
   font-family: 'Open Sans';
-  font-size: 24pt;
-  letter-spacing: 3px;
+  font-size: 1em;
+  letter-spacing: 2px;
   font-weight: 100;
   /*color: white;*/
   line-height: 1;

@@ -608,4 +608,3 @@
 
 }(jQuery, this, this.document));
 
-console.log("aksdjad");
